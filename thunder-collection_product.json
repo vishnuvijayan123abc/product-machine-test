@@ -1,0 +1,192 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "product",
+    "dateExported": "2024-03-14T07:33:18.169Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1a36ef89-6295-4113-b16d-1959f31eb279",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "register",
+            "url": "localhost:8000/productapi/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-14T05:27:13.957Z",
+            "modified": "2024-03-14T06:58:54.548Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "akhil"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jhon@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "855a3642-34e5-42b1-b723-47a090703743",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "token",
+            "url": "localhost:8000/productapi/token/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-14T05:33:27.960Z",
+            "modified": "2024-03-14T06:59:03.609Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "akhil"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Password@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a954040-33fb-4c43-8f9e-5881b88f6667",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "Add Product",
+            "url": "localhost:8000/productapi/product/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-14T05:53:53.189Z",
+            "modified": "2024-03-14T06:14:40.417Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 760838f68bda2c49f88a181df4fe8f9f96fa8a43"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Jhon Player"
+                    },
+                    {
+                        "name": "description",
+                        "value": "100%cotton"
+                    },
+                    {
+                        "name": "size",
+                        "value": "38"
+                    },
+                    {
+                        "name": "color",
+                        "value": "white"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "95434fd8-e471-49f1-84e8-9b0b40752dca",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "userproduct view",
+            "url": "localhost:8000/productapi/user/product/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-14T06:12:38.583Z",
+            "modified": "2024-03-14T06:14:00.322Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 636ce586a9416a5d7118ad67968c1527cbed7246"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6e212e24-d3dc-458a-b032-c4015d8057c1",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "oder",
+            "url": "localhost:8000/productapi/oder/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-14T06:35:02.152Z",
+            "modified": "2024-03-14T07:31:28.529Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 636ce586a9416a5d7118ad67968c1527cbed7246"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "quantity",
+                        "value": "1",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "da0f659b-fa8f-414b-b328-7295831c23e8",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "user oder view",
+            "url": "localhost:8000/productapi/user/oder/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-14T06:56:16.334Z",
+            "modified": "2024-03-14T06:59:19.242Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6b5b196c15a41672c0c06c8c61e1a30a933d0ed6"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "260f0191-1339-4067-92df-995b4535e050",
+            "colId": "fb8032fb-8071-448a-a34f-fbf0bf65810f",
+            "containerId": "",
+            "name": "oder list by max odered",
+            "url": "localhost:8000/productapi/user/count/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-14T07:15:09.076Z",
+            "modified": "2024-03-14T07:15:53.325Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

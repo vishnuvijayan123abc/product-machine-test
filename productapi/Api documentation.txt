@@ -1,0 +1,45 @@
+1)Api for register a new user
+  
+    url:http://127.0.0.1:8000/productapi/register/
+    data:username,email,password
+
+----------------------------------------------------------    
+2)api for geting token
+     url:http://127.0.0.1:8000/productapi/token/
+     data:username,password 
+
+------------------------------------------------------------     
+3)api for add product
+     urls:http://127.0.0.1:8000/productapi/product/  
+     data:name,description,size,color
+     permission:Isadmin
+     authentication:Token
+
+---------------------------------------------------------------     
+4)api for user to view product
+    urls:http://127.0.0.1:8000/productapi/user/product/
+    permission:isauthenticated
+    authentication:Token
+
+---------------------------------------------------------------    
+5)api for oder  a product
+   urls:http://127.0.0.1:8000/productapi/oder/
+   data:,qty
+   permission:isauthenticated
+
+------------------------------------------------------------------   
+6)api for listing user oders
+   urls:http://127.0.0.1:8000/productapi/user/oder/
+   permission:isauthenticated
+   authentication:Token
+
+------------------------------------------------------------------   
+7)api for product list based on max odred
+   urls:http://127.0.0.1:8000/productapi/user/count/
+   permission:isauthenticated
+   authentication:Token
+
+-----------------------------------------------------------------
+ADMIN USERNAME AND password
+username:admin 
+password:Password@123
